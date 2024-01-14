@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Event Invitation</title>
+</head>
+<body>
+    
+    <div class="container">
+        
+        <!-- Event Details Section -->
+        <section id="event-details">
+            <h1>Welcome to Our Event!</h1>
+            <p>Join us for an exciting event filled with fun and laughter.</p>
+        </section>
+
+        <!-- Date & Time Section -->
+        <section id="date-time">
+            <h2>Date & Time</h2>
+            <p>Date: January 30, 2024</p>
+            <p>Time: 6:00 PM - 9:00 PM</p>
+        </section>
+
+        <!-- RSVP Section -->
+        <section id="rsvp">
+            <h2>Reply</h2>
+            <form id="reply-form">
+                <!-- Name Input -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <!-- Email Input -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="attending">Will you be attending?</label>
+                <input type="radio" id="yes" name="attending" value="yes">
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="attending" value="no">
+                <label for="no">No</label><br>
+
+                <!-- RSVP Button -->
+
+                <button type="button" onclick="submitReply()">Reply Now</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- JavaScript Script -->
+    <script src="script.js"></script>
+</body>
+</html>
